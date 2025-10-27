@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ольга Сторчак — Маникюр, уход, красота</title>
+  <title>Маникюр в Ирбите — Ольга Сторчак | Маникюр, уход, красота</title>
+  <meta name="description" content="Профессиональный маникюр в Ирбите. Обрезной и аппаратный маникюр, покрытие гель-лак, дизайн ногтей. Мастер: Ольга Сторчак.">
+  <meta name="keywords" content="маникюр в Ирбите, гель-лак Ирбит, дизайн ногтей Ирбит, уход за ногтями">
+  <meta name="robots" content="index, follow">
+
   <style>
     body {
       font-family: "Segoe UI", Arial, sans-serif;
@@ -14,7 +18,6 @@
       overflow-x: hidden;
     }
 
-    /* Общая плавность появления */
     @keyframes fade-in {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
@@ -39,7 +42,6 @@
       text-align: center;
     }
 
-    /* Базовые блоки */
     section {
       max-width: 900px;
       margin: 40px auto;
@@ -49,7 +51,6 @@
       transition: all 1.2s ease;
     }
 
-    /* Когда блок виден на экране */
     section.visible {
       opacity: 1;
       transform: translateY(0);
@@ -95,12 +96,11 @@
       margin: 30px 0;
     }
 
-    /* Галерея */
     .gallery-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px; /* Отступ между фото */
+      gap: 10px;
     }
 
     .gallery-container img {
@@ -115,7 +115,6 @@
       transform: scale(1.05);
     }
 
-    /* Адаптивность */
     @media (max-width: 768px) {
       .gallery-container img {
         width: 45%;
@@ -134,12 +133,12 @@
 <body>
 
   <header>
-    <img src="1.jpg" alt="Ольга Сторчак Маникюр Уход Красота">
+    <img src="1.jpg" alt="Маникюр в Ирбите — Ольга Сторчак">
   </header>
 
   <section class="about">
     <h2>Обо мне</h2>
-    <p>Здравствуйте! Меня зовут <b>Ольга Сторчак</b>. Я мастер маникюра, который делает акцент на <b>безопасный маникюр</b> — без повреждения натуральной ногтевой пластины. В работе использую только <b>премиальные материалы</b> и профессиональное оборудование.</p>
+    <p>Здравствуйте! Меня зовут <b>Ольга Сторчак</b>. Я делаю профессиональный <b>маникюр в Ирбите</b> с акцентом на безопасный уход за ногтями — без повреждения натуральной пластины. Использую только <b>премиальные материалы</b> и профессиональное оборудование.</p>
     <p>Предлагаю услуги обрезного и аппаратного маникюра, покрытие гель-лаком, укрепление ногтей и разнообразный дизайн.</p>
   </section>
 
@@ -162,10 +161,9 @@
 
   <section class="gallery">
     <h2>Примеры работ</h2>
-    
     <div class="gallery-container">
-      <img src="https://i.imgur.com/raqIdVp.jpeg" alt="Маникюр 1">
-      <img src="https://i.imgur.com/JikS8Xf.jpeg" alt="Маникюр 2">
+      <img src="https://i.imgur.com/raqIdVp.jpeg" alt="Маникюр в Ирбите, дизайн ногтей">
+      <img src="https://i.imgur.com/JikS8Xf.jpeg" alt="Маникюр в Ирбите, гель-лак">
     </div>
   </section>
 
@@ -182,8 +180,27 @@
     <p>Адрес: г. Ирбит, ул. Маршала Жукова, 5</p>
   </footer>
 
+  <!-- Микроразметка для локального бизнеса -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Ольга Сторчак",
+    "image": "https://i.imgur.com/raqIdVp.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Маршала Жукова, 5",
+      "addressLocality": "Ирбит",
+      "addressRegion": "Свердловская область",
+      "postalCode": "",
+      "addressCountry": "RU"
+    },
+    "telephone": "+7-912-273-62-83",
+    "url": "https://твояссылка.github.io"
+  }
+  </script>
+
   <script>
-    // Скрипт для активации эффекта появления при прокрутке
     const elements = document.querySelectorAll('section, footer');
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -192,7 +209,6 @@
         }
       });
     }, { threshold: 0.2 });
-
     elements.forEach(el => observer.observe(el));
   </script>
 
